@@ -1,0 +1,205 @@
+body {
+    background-color: darkblue;
+    color: white;
+    font-family:'Lobster', cursive;
+     min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+.container {
+ flex-grow: 1;
+     display: flex;
+    flex-direction: column;
+    
+}
+#header {
+  background-color: #003c77;
+    padding: 15px;
+    border-radius: 30px;
+}
+#header h1 {
+    font-size: 36px; 
+}
+
+#header p {
+    float: right;
+    font-size: 20px;
+}
+h1 a {
+    color: white;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;  
+     background-color: #003c77;
+     margin-top: 10px;
+    padding: 10px;
+    border-top: 10px;
+}
+
+.jumbotron{
+    margin-top: 10px;
+    font-size: 40px;
+    background-color:  blue;
+    padding: 15px;
+}
+.jumbotron p {
+    font-size: 30px;
+    /** ask about the diff size for the text and my padding is too much and just the general layout*/
+}
+#sale .carousel-inner {
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+.carousel-inner p {
+    font-size: 15px;
+    font-family: sans-serif;
+} 
+ .nav-tabs .nav-link.active.men {
+    background-color: yellow;
+}
+.nav-tabs .nav-link.active.women {
+    background-color: chartreuse;
+}
+  .nav-tabs .nav-link.active.home {
+    background-color: red;
+}
+#textForProduct {
+    color: black;
+}
+.cardHeader{
+    background-color:#003c77; 
+    padding: 5px;
+}
+.nav-tabs .nav-link.active #icon {
+    display: inline-block;
+}
+.card-body img {
+    padding: 5px;
+}
+
+#icon {
+    display: none;
+}
+#card {
+    color: black;
+}
+#card img{
+    float: right;
+}
+.card-body {
+    padding: 5px; !important 
+}
+.button {
+    float: right;
+}
+.btn{
+    background-color: #003c77;
+}
+#star {
+    color: yellow;
+}
+#starFeedback {
+    color:blue;
+}
+.cardHeader p {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.cardHeader h5 {
+    padding-left: 10px; !important
+}
+.cardHeader .header {
+    float: right;
+}
+.modal-header {
+    background-color: chartreuse;
+    color: black;
+    text-align: center;
+ 
+}
+.modal-title {
+      width: 100%; 
+}
+.modal-header img {
+    border-radius: 75%;
+    float: left;
+}
+.modal-header .close {
+    background-color:white;
+    color: blue;
+    opacity: 1;
+}
+.modal-content {
+    color: #003c77;
+}
+form {
+    padding: 5px; !important
+}
+.col-form-label {
+    padding-left: 10px; !important
+}
+
+input:checked + label .nvis {
+    display: none;
+}
+input:not(checked) + label .vis {
+    display: none;
+}
+input:checked + label .vis {
+    display: block;
+}
+input[type=text] {
+  border: 2px solid blue;
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  border: 3px solid green;
+}
+#comment {
+  border: 2px solid blue;
+}
+#comment:focus{
+      border: 3px solid green;
+}
+#reviewModal .modal-content {
+   width: 650px;
+}
+.commentForDress {
+    margin: 5px;
+}
+.comment1 
+{
+    border: 3px solid blue;
+     position: relative;
+   padding-left: 150px;
+    padding-bottom: 100px;
+    margin: 10px;
+}
+.dress1pic {
+    position: absolute;
+    padding: 15px;
+    height: auto;
+}
+#restOfComment .card-body {
+    background-color: darkblue;
+    border: none;
+}
+.title{
+    font-size: 30px;
+}
+p {
+    padding: 5px;
+}
+

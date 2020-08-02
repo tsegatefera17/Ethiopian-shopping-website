@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Tsega's store </title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+     
+      
+        
+    </head>
+    <body class="container-fluid">
+<div class = "container">
+    <div id="header" data-include="header.html"></div>
+    <div class="jumbotron">
+     <p> Sale items! - Our greatest sale ever ends tonight! Be sure to check out these featured sale items below!</p>
+        <div class="carousel slide" id="sale" data-ride="carousel" data-interval = "3500">
+        <!-- Slide contents -->
+        <div class="center-block carousel-inner">
+         <div class="carousel-item active">
+            <img src="Images/pic1.jpg" class="img-fluid pic1"/>
+            <div class="carousel-caption">
+            <h2>Holiday dress</h2>
+            <p> Ladies get your holiday dress for cheap</p>
+            </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="Images/md2_1.jpg" class="img-fluid" />
+                <div class="carousel-caption">
+                <h2> Wedding dress</h2>
+                <p>Hurry get your weeding dress now!!</p>
+                </div>
+                </div>
+            <div class="carousel-item ">
+                <img src="Images/cl1_1.jpg" class="img-fluid" />
+                <div class="carousel-caption">
+                <h2> Coffee maker</h2>
+                <p>50% off traditional coffee maker </p>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <p class="title"> Browse our product selection</p>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+           <a class="nav-link active women" data-target="#womenDr" data-toggle="tab">
+   <span class="fas fa-female icon" id = "icon"></span> 
+               Women's Dress
+           </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link men" data-target="#menDr" data-toggle="tab">
+            <span class="fas fa-male icon" id = "icon"></span> Men's Dress 
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link home" data-target="#culitem" data-toggle="tab">
+                <span class="fas fa-home icon" id = "icon"></span> Home Items
+            </a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">
+        <div class="tab-pane active" id="womenDr">
+        
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P> <a href = "review1.html">Read Reviews </a></P> </div>
+         <h5 id="card-title"> Holiday dress </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/pic1_2.jpg"  alt="alternate text"/>
+        The holidays are always a special time of the year. what makes your holiday special? Make your holiday more special with this gorgeous holiday dress. It will be your present for yourself. 
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reviewModal" data-whatever="@mdo"><span class="far fa-thumbs-up"></span>Review</button>
+
+
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <img src="Images/pic1_2.jpg" alt="alternate text"/>
+          
+        <h5 class="modal-title" id="exampleModalLabel"> Review Holiyday dress</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+         
+    <div class="form-group row">
+ <label for="firstnameInput" class="col-form-label col-md-2">
+ First Name
+ </label>
+ <div class="col-md-10">
+ <input type="text" id="firstname" name="firstname"
+ class="form-control" placeholder="Enter First Name" required
+ />
+ </div>
+ </div>
+<div class="form-group row">
+    <label for="lastname" class="col-form-label col-md-2">
+        Last Name
+    </label>
+    <div class="col-md-10">
+        <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Enter Last Name" required />
+    </div>
+</div>
+ <div class="form-group row">
+    <label for="lastname" class="col-form-label col-md-2">
+        Ratings
+    </label>
+    <div class="col-10">
+     <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio"
+ name="ratingStar" id="oneStar" value="One" />
+<label class="form-check-label" for="oneStar">
+    <div class = "nvis">
+        <span class="far fa-star" id = "starFeddback"></span>
+    </div>
+      <div class = "vis">
+          <span class="fas fa-star" id = "star"></span>
+        </div>   
+         </label>
+</div>
+       <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio"
+ name="ratingStar" id="twoStar" value="Two" />
+<label class="form-check-label" for="twoStar">
+    
+        <div class = "nvis"><span class="far fa-star" id = "starFeddback"></span><span class="far fa-star" id = "starFeddback"></span></div>
+        <div class = "vis"><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span>
+        </div>
+
+           </label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio"
+ name="ratingStar" id="threeStar" value="Three" />
+<label class="form-check-label" for="threeStar">
+    <div class = "nvis">
+        <span class="far fa-star" id = "starFeddback"></span>
+          <span class="far fa-star" id = "starFeddback"></span>
+          <span class="far fa-star" id = "starFeddback"></span>
+    </div>
+      <div class = "vis">
+          <span class="fas fa-star" id = "star"></span>
+            <span class="fas fa-star" id = "star"></span>
+            <span class="fas fa-star" id = "star"></span>
+        </div>  
+    </label>
+</div>
+            <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio"
+ name="ratingStar" id="fourStar" value="Four" />
+<label class="form-check-label" for="fourStar">
+   <div class = "nvis">
+        <span class="far fa-star" id = "starFeddback"></span>
+          <span class="far fa-star" id = "starFeddback"></span>
+          <span class="far fa-star" id = "starFeddback"></span>
+        <span class="far fa-star" id = "starFeddback"></span>
+    </div>
+      <div class = "vis">
+          <span class="fas fa-star" id = "star"></span>
+            <span class="fas fa-star" id = "star"></span>
+            <span class="fas fa-star" id = "star"></span>
+           <span class="fas fa-star" id = "star"></span>
+        </div> 
+</label>
+</div>
+            <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio"
+ name="ratingStar" id="fiveStar" value="Five" />
+<label class="form-check-label" for="fiveStar">
+     <div class = "nvis">
+        <span class="far fa-star" id = "starFeddback"></span>
+          <span class="far fa-star" id = "starFeddback"></span>
+          <span class="far fa-star" id = "starFeddback"></span>
+        <span class="far fa-star" id = "starFeddback"></span>
+         <span class="far fa-star" id = "starFeddback"></span>
+    </div>
+      <div class = "vis">
+          <span class="fas fa-star" id = "star"></span>
+            <span class="fas fa-star" id = "star"></span>
+            <span class="fas fa-star" id = "star"></span>
+           <span class="fas fa-star" id = "star"></span>
+          <span class="fas fa-star" id = "star"></span>
+        </div> 
+                </label>
+</div>
+</div>
+</div>
+    <div class="form-group row">
+        <label for="comment" class="col-form-label col-md-2">
+          Comment
+        </label>
+        <div class="col-md-10">
+            <textarea id="comment" name="comment" 
+            class="form-control" rows="5"
+            placeholder="Enter Your comment" required></textarea>
+        </div>
+    </div>
+</form>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" data-dismiss="modal" >Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star-half-alt" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P>Read Reviews </P> </div>
+         <h5 id="card-title">Special occasion dresses</h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/pic2_2.jpg"  alt="alternate text"/>
+              Have you ever wondered what to wear on special occasions? If so here is a beautiful yellow dress for you. It is professional and cute. Shine like the sun with this yellow dress!
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+    <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title"> Weeding dress </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/wd3.jpg"  alt="alternate text"/>
+        Oh my it is a struggle to find the perfect wedding dress. But it is your lucky day. This wedding dress is custom made just for you. You will love it. Try it yourself. Order now for half the price!
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+</div>
+        </div>
+        <div class="tab-pane" id="menDr">
+        <div class="row">
+   <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title"> Weeding dress </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/md2_2.jpg"  alt="alternate text"/>
+          You just keep on being excited for your big day. We got the dress. Get a matching wedding dress for you and your partner now! Our sale ends tonight. 
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+  <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title"> Special occasion dresses </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/md1_2.jpg"  alt="alternate text"/>
+          Simple and elegant.  This is your perfect dress for any special occasion.  We have every size. Get this dress and look special on a special occasion!
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+<div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="far fa-star" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title"> Holiyday dresses </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/md_1.jpg"  alt="alternate text"/>
+       The holiday season is around the corner. What are you waiting for? Don't waste time! Get your holiday dress for 25% off the original price. 
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+</div>
+        </div>
+        <div class="tab-pane" id="culitem">
+        <div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title"> Coffee maker </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/cl_2.jpg"  alt="alternate text"/>
+        Everyone needs their morning coffee. Get your coffee maker for 50% off. It comes with six cups and a milk container.
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+ <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="fas fa-star-half-alt" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title">Containers </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/cl2-1.jpg"  alt="alternate text"/>
+         This container can store anything. You can keep it anywhere in your house and it looks like art. It is made by hand.
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+  <div class="col-sm-4">
+    <div class="card">
+       
+        <div class = "cardHeader"> <div class = "header"> <span class="fas fa-star" id = "star"></span> <span class="fas fa-star" id = "star"></span><span class="fas fa-star" id = "star"></span><span class="far fa-star" id = "star"></span><span class="far fa-star" id = "star"></span> <br> <P> Read Reviews </P> </div>
+         <h5 id="card-title"> Plates </h5> </div>
+      <div class="card-body">
+        <p class="card-text" id = "card">
+            <img src="Images/cl3_1.jpg"  alt="alternate text"/>
+        What if you can make eating fun? Well here you have it! Get your plate. Every time you eat, it will put a smile on your face.
+          </p>
+       <div class = "button"> 
+           <button href="#" class="btn btn-primary"> <span class="fas fa-cart-arrow-down"></span> Buy</button>
+           <button type="button" class="btn btn-primary"><span class="far fa-thumbs-up"></span>Review</button>
+  </div>
+        </div>
+          </div>
+      </div>
+</div>
+    </div>
+    <div id="footer" data-include="footer.html" > </div>
+</div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://scripts.hopewebdesign.net/include.js"></script>
+    </body>
+</html>
